@@ -1,0 +1,200 @@
+<head>
+
+<!-- links external KnightLab SoundCite interactive tool to my HTML
+ including CSS (styles inline audio player) + JavaScript (ensures audio playback when text is clicked by user)-->
+
+    <link href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css'
+    rel="stylesheet" type='text/css'> <script type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+
+</head>
+
+<!--------------------- ARTICLE CSS STYLING BELOW  --------------------->
+
+<style>
+
+body {
+    margin:auto;
+    font-size:1.5em;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center;  
+    text-align: center;
+}
+
+.header video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    z-index: -1; /* ensures video is placed BEHIND headline */
+
+}
+
+.article {
+    width: 50%;
+    margin: 280px auto;  
+}
+
+#headline {
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+#byline {
+    color: whitesmoke;
+    font-size: 25px;
+    margin-top: -40px;
+}
+
+.madeline-section {
+    gap: 20px;
+    width: auto;
+}
+
+.float-video {
+    float: right;
+    max-width: 400px; 
+    margin-bottom: 10px;
+    margin-left: 9px;
+}
+
+#photo-caption {
+    font-size: 0.8em;
+    margin-top: 10px;
+
+}
+
+/* MOBILE RULES - optimizes story for mobile by increasing text size, page width, adjusting header video/headline, + placement of embedded media */
+
+@media (orientation: portrait) {
+  
+    body {
+        font-size:4em;
+        width: 100%;
+    }
+
+    .article {
+        width: 100%;
+        padding-top: 110px; }
+
+    .header {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;     
+        justify-content: center;  
+        text-align: center; }
+
+    .header video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    
+    .float-video {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 0;
+        padding: 0; }
+  
+
+    #headline {
+        color: whitesmoke;
+        font-weight: 500;
+        font-size: 80px;
+        margin-top: 100px; }
+
+    #byline {
+        color: whitesmoke;
+        font-size: 50px;
+        margin-top: -40px; }
+
+}
+
+</style>
+
+<!--------------------- ARTICLE BODY BELOW --------------------->
+
+
+<body>
+
+<header class="header">
+        <div id="headline">
+        <p>A Glimpse into Evanston’s Café Culture</p></div>
+        <div id="byline">
+        <p> By Madelyn Yu</p></div>
+        <video autoplay muted loop  src="study.mov"></video> <!-- ensures header video is muted, autoloops, plays continuously -->
+</header>
+
+<div class="article">
+
+    <p>Step into a downtown Evanston coffee shop and chances are you’ll encounter the following scene: students seated shoulder to shoulder with headphones on, the rhythmic clacking of computer keyboards, and drinks resting beside open notebooks or half-finished problem sets.</p> 
+    <p> Cafés near college campuses have become more than just places to grab coffee or a quick lunch. For many Northwestern students, they serve as community hubs where hours are spent fueled by copious amounts of caffeine.</p> 
+
+    <h2> From Libraries to Lattes  </h2> 
+
+    <p> With no shortage of libraries on campus, from Deering Library’s neo-Gothic aesthetic to Main Library’s maze-like floors and the 24-hour Mudd Library, many coffee shops in the downtown area remain consistently packed with students, particularly on weekends.  
+
+
+    <p> For Madeline Huang, a third-year student in the School of Education and Social Policy, the appeal lies in the 
+        <span class="soundcite" 
+        data-url="ambience.mp3" 
+        data-plays="1">bustling environment,</span> 
+        often accompanied by the whir of coffee machines, murmur of nearby conversations, and curated barista playlists. </p> 
+    <p> “There’s always something going on, but it’s never really overwhelming,” she said. “You still feel like you’re part of a community, even if you’re studying alone.” </p> 
+        
+    <div class="madeline-section">
+
+        <p> Although Huang enjoys rotating between cafés depending on the atmosphere, such as visiting Paris Baguette for a more modern feel, her go-to spot remains Colectivo Coffee on the corner of Church Street and Sherman Avenue. </p> 
+
+        <video class="float-video" autoplay muted loop src="colectivo.mov"></video>
+    
+    </div> 
+    
+
+    <p> According to Huang, its rustic interior, warm lighting, and wooden tables give the space a “nostalgic, cozy feeling.”</p> 
+    <p> Huang added that cafés also make long study sessions feel sustainable. With easy access to quick bites, drinks and free public Wi-Fi, she said she can comfortably settle in for hours without needing to relocate.</p> 
+
+    <h2> Building Connections Over Coffee </h2> 
+
+    <p> For Joyce Ma, a second-year student in the School of Communication, coffee shops play an important role in her campus social life and networking efforts.</p> 
+    <p>In Northwestern’s hectic pre-professional ecosystem, the “coffee chat” has become almost ritualistic, with students often discussing work experiences and career aspirations with alumni, working professionals, or club members over coffee. </p> 
+    <p> “Cafés make networking feel more relaxed and low-pressure in a way that Zoom meetings or other campus spaces can’t really seem to replicate,” Ma said.
+    <p>Ma added that the environment helps conversations unfold more naturally. </p> 
+    <p>“It’s easier to talk when you’re ordering coffee together and then just sitting across from someone with a drink,” she said. “It doesn’t feel like an interview or anything too formal.”</p> 
+    <p>Beyond networking, Starbucks and other cafés with larger tables often double as group work spaces. Ma said she frequently sets up times to meet friends there to review for exams or simply catch up between classes.</p> 
+    
+    <h2> Brewing a Third Space </h2> 
+
+    <p> The popularity of café studying signals a broader shift in how college students navigate campus life. Rather than confining themselves to silent study rooms, many are gravitating toward spaces that feel alive. </p> 
+    
+
+    <!-- image with caption, credit, and alt text -->
+
+    <img src="starbucks.jpg" width="100%" alt="Interior of a Starbucks café with customers seated at tables using laptops and drinking coffee."/>
+    
+    <div id="photo-caption">
+        <i> Students and local residents at Starbucks on Sherman Ave. during a weekday afternoon rush. (Photo by Madelyn Yu)</i>
+    </div>
+
+    <p> In that way, cafés have taken on the role of a “third space,” positioned somewhere between home and the classroom. They offer a place where people from all walks of life are bound together by the familiar routine of settling in with a cup of coffee and a few hours of work ahead.</p> 
+    <p> And with open tables hard to come by and laptops covering nearly every surface each afternoon, Evanston’s café study culture appears to show little sign of fading anytime soon.</p> 
+ 
+    <h2> A Guide to Downtown Evanston’s Study Staples</h2> 
+
+
+        <!-- embedded custom google my maps showcasing popular cafés for studying in downtown Evanston -->
+
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Nb6PIzlxba8WWdG6p4rfRUgIYoPzkVA&ehbc=2E312F&noprof=1" width="100%" height="60%" ></iframe>
+
+</div> 
+
+</body> 
